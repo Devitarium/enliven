@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Enliven | Professional Painting Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+     <div class="navbar-container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- Replace with your SVG logo -->
+                <img src="images/enliven_logo 2.1.svg" class="logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+      </div>
+  </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1>Let's Bring Life to Your Space</h1>
+            <p>Get in touch with our team for a free consultation or quote</p>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form" action="https://formspree.io/f/xjkoznob" method="POST">
+                    <input type="text" name="_gotcha" style="display:none"> 
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected></option>
+                            <option value="residential">Residential Painting</option>
+                            <option value="commercial">Commercial Painting</option>
+                            <option value="industrial">Industrial Painting</option>
+                            <option value="decoration">Interior Decoration</option>
+                            <option value="stencils">Stencils Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="service">Service Interested In</label>
+                    </div>
+                    
+                    <div class="form-group textarea-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    
+                    <button type="submit" class="submit-btn">
+                        Send Message <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <div class="contact-info-container">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p><a href="tel:+0987654321">+0 (987) 654-321</a></p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@enliven.com">info@enliven.com</a></p>
+                    <p><a href="mailto:sales@enliven.com">sales@enliven.com</a></p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/1234567890">Chat with us instantly</a></p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>123 Painting Avenue<br>Creative District<br>Lagos, Nigeria</p>
+                </div>
+                
+                <div class="hours-card">
+                    <h3>Working Hours</h3>
+                    <div class="hours-item">
+                        <span>Mon-Fri</span>
+                        <span>8:00 AM - 5:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Saturday</span>
+                        <span>9:00 AM - 2:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Sunday</span>
+                        <span>Closed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.123456789012!2d3.1234567890123456!3d6.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDcnMjQuNSJOIDPCsDA3JzI0LjUiRQ!5e0!3m2!1sen!2sng!4v1234567890123!5m2!1sen!2sng" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Ready to Transform Your Space?</h2>
+            <p>Schedule your free consultation today</p>
+            <div class="cta-buttons">
+                <a href="tel:+1234567890" class="cta-button phone">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="mailto:info@enliven.com" class="cta-button email">
+                    <i class="fas fa-envelope"></i> Email Us
+                </a>
+            </div>
+        </div>
+    </section>
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Logo and About -->
+    <div class="footer-col footer-about">
+      <div class="footer-logo">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="8" fill="#030456"/>
+          <path d="M20 10L25 15H15L20 10Z" fill="#F4aF1B"/>
+          <path d="M25 25L20 30L15 25H25Z" fill="#F4aF1B"/>
+          <rect x="18" y="15" width="4" height="10" fill="#F4aF1B"/>
+        </svg>
+        <span>Enliven</span>
+      </div>
+      <p class="footer-tagline">Bringing life to your spaces through exceptional painting and decoration services since 2010.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col footer-links">
+      <h3 class="footer-heading">Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="stencils.html">Stencil Store</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col footer-services">
+      <h3 class="footer-heading">Our Services</h3>
+      <ul>
+        <li><a href="services.html#residential">Residential Painting</a></li>
+        <li><a href="services.html#commercial">Commercial Painting</a></li>
+        <li><a href="services.html#industrial">Industrial Painting</a></li>
+        <li><a href="services.html#decoration">Interior Decoration</a></li>
+        <li><a href="stencils.html">Stencil Sales</a></li>
+        <li><a href="services.html#consultation">Color Consultation</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-col footer-contact">
+      <h3 class="footer-heading">Contact Us</h3>
+      <ul class="contact-info">
+        <li>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>123 Painters Avenue, Color District<br>Your City, ST 12345</span>
+        </li>
+        <li>
+          <i class="fas fa-phone-alt"></i>
+          <span><a href="tel:+234">0 456-7890</a></span>
+        </li>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <span><a href="mailto:info@enlivenpaints.com">@enlivenpaints.com</a></span>
+        </li>
+        <li>
+          <i class="fab fa-whatsapp"></i>
+          <span><a href="https://wa.me/1234567890">Chat on WhatsApp</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <div class="footer-container">
+      <p class="copyright">&copy; 2023 Enliven Painting Co. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <span>|</span>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
